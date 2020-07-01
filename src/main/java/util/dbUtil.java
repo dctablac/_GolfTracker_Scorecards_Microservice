@@ -19,7 +19,7 @@ public class dbUtil {
     static {
         try {
             properties = new Properties();
-            properties.load(new FileInputStream("src/main/java/resources/database.properties"));
+            properties.load(new FileInputStream("src/main/resources/database.properties"));
             Class.forName(properties.getProperty(DB_DRIVER_CLASS));
 
             String url = properties.getProperty(DB_URL);
